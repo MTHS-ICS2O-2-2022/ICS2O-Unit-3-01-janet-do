@@ -8,29 +8,29 @@ package main
 import "fmt"
 
 func main() {
-	// This function finds the area of a trapezoid
+    // This function finds the volume of a pyramid
 
-	var height float64
-	var base1 float64
-	var base2 float64
-	var area float64
+    var length float64
+    var width float64
+    var height float64
+    var volume float64
 
-	// input
-	fmt.Println("This program finds the area of a trapezoid.")
-	fmt.Println()
-	fmt.Print("Enter the height (in cm): ")
-	fmt.Scanln(&height)
-	fmt.Print("Enter the length of base 1 (in cm): ")
-	fmt.Scanln(&base1)
-	fmt.Print("Enter the length of base 2 (in cm): ")
-	fmt.Scanln(&base2)
-	fmt.Println()
+    // input
+    fmt.Println("This program finds the volume of a pyramid.")
+    fmt.Println()
+    fmt.Print("Enter the length (in cm): ")
+    fmt.Scanln(&length)
+    fmt.Print("Enter the width (in cm): ")
+    fmt.Scanln(&width)
+    fmt.Print("Enter the height (in cm): ")
+    fmt.Scanln(&height)
+    fmt.Println()
 
-	// process
-	area = 0.5 * (base1 + base2) * height
+    // process
+    volume = (length * width * height) / 3.0
 
-	// output
-	fmt.Println("The area is:", area, "cm².")
-	fmt.Println()
-	fmt.Println("Done.")
+    // output
+    fmt.Printf("The volume of the pyramid is: %.2f cm³\n", volume)
+    fmt.Println()
+    fmt.Println("Done.")
 }
