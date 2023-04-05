@@ -1,7 +1,7 @@
 // Created by: Janet
 // Created on: Sep 2020
 //
-// This program finds the area of a trapezoid
+// This program finds the volume of a pyramid
 
 package main
 
